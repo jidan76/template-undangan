@@ -1,0 +1,137 @@
+:root {
+    --bg: #0f0f0f;
+    --shadow: 0 2px 2px rgb(0, 0, 0);
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: 'work sans', sans-serif;
+    height: 3000px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(aditya-gautama-putra-k0tGYZ6Xbhg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    /* background-color: var(--bg); */
+}
+
+.hero h4 {
+    font-size: 1.6rem;
+}
+
+.hero h1 {
+    font-family: 'sacramento', cursive;
+    font-size: 6rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.hero a {
+    background-color: rgba(238, 90, 90, 0.657);
+    color: white;
+    box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+    background-color: white;
+    color: rgb(238, 90, 90);
+}
+
+.hero h1, .hero h4, .hero p {
+    text-shadow: var(--shadow);
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    backdrop-filter: blur(2px);
+}
+
+
+
+.navbar .navbar-brand, .navbar .offcanvas-title{
+    font-family: 'sacramento', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.home {
+    background-image: url(bg-home.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+
+.home h2 {
+    color: rgb(238, 90, 90);
+    font-family: 'sacramento', cursive;
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.home h3{
+    color: #444;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.home p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* media query */
+/* laptop */
+@media (max-width: 992px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+/* tablet */
+@media (max-width: 767px) {
+    html {
+        font-size: 65%;
+    }
+    .navbar .offcanvas {
+        min-height: 100vh;
+        backdrop-filter: blur(2px);
+    }
+    .navbar .nav-link {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+/* mobile phone */
+@media (max-width: 576px) {
+    html {
+        font-size: 60%;
+    }
+}

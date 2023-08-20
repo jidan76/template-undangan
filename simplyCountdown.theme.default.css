@@ -1,0 +1,85 @@
+.simply-countdown {
+    overflow: hidden;
+    display: table;
+    font-family: 'Arial', sans-serif;
+    margin: auto;
+}
+
+.simply-countdown>.simply-section {
+    width: 40px;
+    height: 40px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin: 10px;
+    background: rgba(238, 90, 90, 0.536);;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+    border-radius: 50%;
+}
+
+.simply-countdown>.simply-section .simply-amount, 
+.simply-countdown>.simply-section .simply-word {
+    display: block;
+    text-align: center;
+}
+
+.simply-countdown>.simply-section .simply-word {
+    font-size: 1.2rem;
+}
+
+.simply-countdown>.simply-section .simply-amount {
+    font-size: 1.6rem;
+}
+
+/* media query */
+/* laptop */
+@media (max-width: 992px) {
+    
+    
+    .simply-countdown>.simply-section {
+        padding: 35px;
+        margin: 8px;
+    }
+    .simply-countdown>.simply-section .simply-word {
+        font-size: 90%;
+    }
+    
+    .simply-countdown>.simply-section .simply-amount {
+        font-size: 90%;
+    }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+    
+    .simply-countdown>.simply-section {
+        padding: 30px;
+        margin: 5px;
+    }
+    .simply-countdown>.simply-section .simply-word {
+        font-size: 80%;
+    }
+    
+    .simply-countdown>.simply-section .simply-amount {
+        font-size: 80%;
+    }
+}
+
+/* mobile phone */
+@media (max-width: 576px) {
+    
+    
+    .simply-countdown>.simply-section {
+        padding: 8px;
+        margin: 3px;
+    }
+    .simply-countdown>.simply-section .simply-word {
+        font-size: 70%;
+    }
+    
+    .simply-countdown>.simply-section .simply-amount {
+        font-size: 70%;
+    }
+}
